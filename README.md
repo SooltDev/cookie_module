@@ -8,7 +8,7 @@ Use the cookie module to easily manage the cookies belonging to your site.
 Download `cookie.mod.js`, and paste the html snippet, into the head section.
 
 ````html
-<script src="path/cookie.mod.js"></scrpt>
+<script src="path/cookie.mod.js"></script>
 ````
 
 ### Methods:
