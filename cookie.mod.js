@@ -179,8 +179,7 @@ const Cookie = (options = {}) => {
 /* ********************PUBLIC INTERFACE******************** */
     return {
         setItem, getItem, removeItem, clear, keys, getCookies, remainingDays, setCookie, getCookie,
-        version: '2.0', 
-        cookie, isTsKey
+        version: '2.0'
     }
 }
 
