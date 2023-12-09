@@ -11,7 +11,6 @@ The Cookie module offers a simple solution for managing them.
     - Query based on cookie key.
     - Querying the cookie expiration time.
     - Cookie object query that contains the key-value pairs, together with the expiration time
-    - . . .
 
 ## Usage
 Download `cookie.mod.js`, and paste the html snippet, into the head section.
