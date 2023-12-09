@@ -2,13 +2,16 @@
 
 Use the cookie module to easily manage the cookies belonging to your site. 
 
-Cookie management in the browser is difficult, as it stores all data in a single string. In addition, we do not have the option of querying the expiration date of cookies. The Cookie module offers a simple solution for managing them.
+Cookie management in the browser is difficult, as it stores all data in a single string. In addition, we do not have the option of querying the expiration date of cookies. 
+
+The Cookie module offers a simple solution for managing them.
 
  - such as the:
     - Create new cookies from parameters
     - Query based on cookie key.
     - Querying the cookie expiration time.
     - Cookie object query that contains the key-value pairs, together with the expiration time
+    - ...
 
 ## Usage
 Download `cookie.mod.js`, and paste the html snippet, into the head section.
