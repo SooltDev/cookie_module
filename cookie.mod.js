@@ -1,7 +1,7 @@
 
 /*!
  * Module: cookie
- * Version: 2.0
+ * Version: 2.2
  * Copyright: Copyright(c) 2023. december Fosztó Zsolt
  * Licens: MIT Licensed
  */
@@ -17,6 +17,13 @@
  */
 
 const Cookie = (options = {}) => {
+
+    const version = '2.2';
+
+    if (Cookie.created)
+        return new Error("The cookie manager has already been created.");
+
+
     let cookie = {};
     const tsPrefix = '_ts_';
 
@@ -42,7 +49,7 @@ const Cookie = (options = {}) => {
 /**
  * - Init cookies
  * - Sets the "privat" cookie object. 
- * @private function
+ * @private
  */
 
     function init(){
@@ -176,11 +183,18 @@ const Cookie = (options = {}) => {
         return cooks;
     }
 
+    Cookie.created = true;
+
 /* ********************PUBLIC INTERFACE******************** */
-    return {
+
+    const publicInterface = {
         setItem, getItem, removeItem, clear, keys, getCookies, remainingDays, setCookie, getCookie,
-        version: '2.0'
-    }
+        get version(){
+            return version;
+        }
+    };
+
+    return publicInterface;
 }
 
 
