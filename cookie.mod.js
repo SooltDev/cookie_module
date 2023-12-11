@@ -82,7 +82,7 @@ const Cookie = function(){
                 params = Object.assign({
                     expires: 30,
                     path: '/',
-                    samesite: 'lax'
+                    samesite: 'Lax'
                 },params);
 
                 const d = new Date(Date.now() + (1000 * 60 * 60 * 24 * params.expires));
